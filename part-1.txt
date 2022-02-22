@@ -1,0 +1,27 @@
+**Part 1**
+- HTTP is the protocol used to send/receive information between the client and a server.
+
+- A url is the specific address of a webpage including the protocol (ftp, http, etc.), the hostname, and any resource/query strings.
+
+- A DNS or domain name system, is a server which takes a hostname such as google.com and returns the specific ip address associated with that hostname.
+
+- A query string is optional information passed into a url usually after submitting forms using GET.
+
+- GET and POST:
+	* GET - Used to retrieve information from a server with no side effects, usually data is passed in as query strings.
+	* POST - Used to access a server with side effects (creating new password, etc.), data is usually passed in the request body.
+
+- An http request is a request passed to a server from a client using the http protocol.
+
+- An http response is a respones passed to a client from a server using the http protocol.
+
+- An http header is additional information passed into the request or the response:
+	* Accept: text/html	- request header
+	* Accept-Language: en-us	- request header
+	* Last-Modified		- response header
+	* Content-Type		- response header
+
+- First your browser will turn the hostname into a proper ip address using the domain name system, then it will make a request to that server and hopefully get a response back with a status code of 200, then your client-side machine will build the DOM and make any additional http request it needs (images, link tags, etc.).
+
+**Part 2**
+- curl -v https://icanhazdadjoke.com/search?term=pirate
